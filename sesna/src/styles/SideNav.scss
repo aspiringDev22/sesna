@@ -1,0 +1,140 @@
+@import './color.scss';
+
+.sidenav-container{
+    width: 350px;
+    height: 100vh;
+    font-family: 'Inter';
+    .first-container{
+        display: flex;
+        justify-content: space-between;
+        margin-top: 10px;
+        background: $second;
+        padding: 25px;
+        .btn{
+            &:active{
+            transform: scale(0.9);
+            transition: 0.2s ease;
+            }
+        }
+        .button-container{
+            .requests{
+                background: $first;
+                border: none;
+                padding: 6px;
+                color: white;
+                border-radius: 5px;
+                cursor: pointer;
+                margin-right: 20px;
+            }
+            .add{
+                background: transparent;
+                border: 2px solid $first;
+                padding: 5px;
+                color: $first;
+                cursor: pointer;
+                border-radius: 6px;
+            }
+        }
+    }
+    .second-container{
+        background: $second;
+        margin-top: 7px;
+        display: flex;
+        height: 220px;
+        padding: 10px;
+        flex-direction: column;
+        align-items: center;
+        // justify-content: center;
+        .skills{
+            margin: 15px;
+            display: flex;
+            font-weight: 400;
+            .head{
+                color: #334155;
+                margin-left: 25px;
+            }
+        }
+      .details{
+        font-size: 14px;
+        text-align: center;
+        color: rgba(51, 65, 85, 0.63);
+        margin: 0px 20px 90px 0px;
+      }
+    }
+    .third-container{
+        background: $second;
+        margin: 5px;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        // align-items: center;
+        padding: 20px;
+        .input-search{
+            display: flex;
+            justify-content: center;
+            // align-items: center;
+            input{
+                padding: 9px;
+                border-radius: 5px;
+                border: none;
+                outline: none;
+                margin-left:-30px;
+            }
+            .searchbtn{
+                // margin-top: 2px;
+                background: $first;
+                border: none;
+                padding: 5px;
+                color: white;
+                cursor: pointer;
+                &:active{
+                    transform: scale(0.9);
+                    transition: transform 0.2s ease;
+                }
+            }
+        }
+        .main-content{
+            margin-top: 30px;
+            .first-content,.second-content,.third-content,.fourth-content{
+                margin: 10px;
+            .prof{
+                display: flex;
+                align-items: center;
+                button{
+                    background: none;
+                    border: none;
+                    margin-top: 7px;
+                    cursor: pointer;
+                    &:active{
+                        transform: scale(1.1);
+                        transition: transform 0.2s ease;
+                    }
+                }
+              .comms{
+                margin-left: 40px;
+                font-size: 14px;
+                text-align: center;
+                color: rgba(51, 65, 85, 0.8);
+                .ikon{
+                    margin-top: 4px;
+                }
+              }
+            }
+            .general{
+                display: flex;
+                justify-content: space-evenly;
+                margin: 12px 0px 0px 10px;
+                text-align: center;
+                font-size: 13px;
+                color: rgba(51, 65, 85, 0.8);
+                .noti{
+                    background: $first;
+                    border-radius: 50%;
+                    padding: 0px 5px;
+                    color: white;
+                }
+            }
+        }
+        }
+    }
+}

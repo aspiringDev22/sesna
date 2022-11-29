@@ -1,0 +1,70 @@
+@import './color.scss';
+
+.groupchat-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+    font-family: 'Inter';
+    .profile{
+        display: flex;
+        width: 62vw;
+        margin: 20px;
+        img{
+            width: 40px;
+            height: 40px;
+            margin-top: 6px;
+            margin-right: 15px;
+        }
+        .name-time{
+            display: flex;
+            justify-content: space-around;
+            width: 240px;
+            .time{
+                font-size: 10px;
+                margin-top: 3px;
+            }
+            .badge{
+                font-size: 10px;
+                text-align: center;
+                display: flex;
+                align-items: center;
+                border-radius: 5px;
+            }
+        }
+    }
+    .typing-box{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: -7rem;
+        background:$second;
+        width: 70vw;
+        height: 10vh;
+        input{
+            width: 20vw;
+            // border: none;
+            outline: none;
+            padding: 8px 16px;
+            margin-right:10px ;
+        }
+        button{
+            cursor: pointer;
+        }
+        .attachment{
+            background: none;
+            border: none;
+            margin-right: 10px;
+        }
+        .send{
+            background: $first;
+            border: none;
+            color: white;
+            border-radius: 50%;
+            padding: 7px 7px;
+            display: flex;
+            align-items: center;
+        }
+    }
+}
